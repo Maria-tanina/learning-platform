@@ -44,7 +44,7 @@
                             <div class="platform__text">Курси для початківців і просунутих програмістів, а також цікаві
                                 статті.
                                 Приєднуйтесь і дозвольте нам підтримати вас у вашій кар’єрі</div>
-                            <a href="#" class="platform__btn">Call to action</a>
+                            <a data-modal href="#" class="platform__btn">Зв'язатися з нами</a>
                             <p class="mouse">Гортай вниз</p>
                         </div>
                         <div class="platform__content">
@@ -328,7 +328,7 @@
                             <div class="secondsName">секунд</div>
                         </div>
                     </div>
-                    <button class="time__btn">Придбати</button>
+                    <button data-modal class="time__btn">Придбати</button>
                 </div>
             </section>
 
@@ -350,7 +350,7 @@
                             <div class="input__wrapper input__wrapper--email"><input
                                     class="programming-form__input programming-form__input--email"
                                     placeholder="Ваша Email адреса" type="email"></div>
-                            <button class="programming-form__btn" type="button">Підписатися</button>
+                            <button class="programming-form__btn" type="submit">Підписатися</button>
                         </div>
                     </div>
                 </div>
@@ -375,6 +375,28 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Ми зв'яжемось з вами якнайшвидше!</div>
+                    <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефону" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Передзвонити мені</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-subscribe">
+        <div class="modal-subscribe__dialog">
+            <div class="modal-subscribe__content">
+                    <div data-closeSub class="modal__close">&times;</div>
+                    <div class="modal-subscribe__title modal__title">Дякуємо за підписку!</div>
+                    <img src="images/home/pic2.svg" alt="">
+            </div>
+        </div>
     </div>
     <script src="js/main.min.js"></script>
 

@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+
 $('.article__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -66,3 +69,80 @@ function setClock(endtime, selector) {
         }
 }
 setClock(deadline, '.timer');
+
+//Modal 
+
+const openModalBtn = document.querySelectorAll('[data-modal]'),
+        closeModal = document.querySelector('[data-close]'),
+        modal = document.querySelector('.modal');
+openModalBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+});
+
+modal.addEventListener('click', (e) => {
+    if(e.target == modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+    }
+});
+
+
+
+// подписка
+
+const form = document.querySelector('.programming-form'),
+    closeSubModal = document.querySelector('[data-closeSub]'),
+    subModal = document.querySelector('.modal-subscribe');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    subModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+});
+closeSubModal.addEventListener('click', () => {
+    subModal.style.display = 'none';
+    document.body.style.overflow = '';
+});
+
+subModal.addEventListener('click', (e) => {
+    if(e.target == subModal) {
+    subModal.style.display = 'none';
+    document.body.style.overflow = '';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
