@@ -787,6 +787,7 @@ html, body {
     }
 
     &__btn {
+        transition: all 0.3s;
         cursor: pointer;
         text-align: start;
         padding: 20px 37px;
@@ -800,7 +801,10 @@ html, body {
         @extend %bitter600;
         height: 60px;
         position: relative;
-
+        &:hover {
+            background: #e44b2c;
+            transform: scale(1.1);
+        }
         &::after {
             position: absolute;
             width: 14px;
