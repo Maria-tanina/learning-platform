@@ -1,27 +1,32 @@
-html, body {
+html,
+body {
     height: 100%;
     padding: 0;
 }
 
 .wrapper {
-   min-height: 100%;
-   display: flex;
+    min-height: 100%;
+    display: flex;
     flex-direction: column;
     background-image: url(../images/home/decor2.svg);
     background-position: top left;
     background-repeat: no-repeat;
     z-index: -10;
 }
+
 .main {
     flex: 1 1 auto;
 }
+
 .container {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .header {
     padding: 18px 0;
+    z-index: 2000;
 }
 
 .header__inner {
@@ -33,6 +38,7 @@ html, body {
 .menu {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .menu__list {
@@ -53,6 +59,30 @@ html, body {
 
 .menu__list-link:hover {
     color: #E36F59;
+}
+
+.menu__btn {
+    display: none;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.logo__min {
+    display: none;
+}
+
+.social__list {
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+    @extend %bitter700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #23262D;
+    padding: 30px 0;
+    margin: 0 15px;
+    border-top: 1px solid #E2E7EB;
 }
 
 .language__btn {
@@ -150,6 +180,9 @@ html, body {
             background-image: url(../images/home/arrow.svg);
             top: 24px;
         }
+        &--small {
+            display: none;
+        }
     }
 
     .mouse {
@@ -202,7 +235,7 @@ html, body {
         position: absolute;
         top: 32px;
         left: -10px;
-        z-index:-1;
+        z-index: -1;
     }
 }
 
@@ -214,7 +247,7 @@ html, body {
     padding: 5px 0 90px;
 
     &__item {
-        width: 285px;
+        width: 285px !important;
         position: relative;
 
         img {
@@ -432,13 +465,17 @@ html, body {
     z-index: -10;
 
     &__item {
+        display: block !important;
+        width: auto !important;
         background: #CCC1F6;
         border-radius: 8px;
         max-width: 600px;
         padding: 30px 30px 25px 20px;
         min-height: 280px;
+        margin-right: 20px;
 
         &--second {
+            margin-right: 0;
             background: #E7EEF3;
 
             .courses__subtitle {
@@ -635,21 +672,26 @@ html, body {
         @extend %seg600;
     }
 }
+
 .time {
     padding: 90px 0 30px;
+
     &__subtitle {
         text-align: center;
         color: #f63b15;
+
         &::before {
             left: 45%;
         }
     }
+
     &__title {
         font-size: 30px;
         text-align: center;
         @extend %bitter700;
-        
+
     }
+
     &__btn {
         cursor: pointer;
         display: block;
@@ -667,22 +709,25 @@ html, body {
         height: 60px;
         position: relative;
         transition: all 0.3s;
+
         &::after {
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                content: "";
-                background-image: url(../images/home/money.svg);
-                right: 30px;
-                top: 15px;
-            
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            content: "";
+            background-image: url(../images/home/money.svg);
+            right: 30px;
+            top: 15px;
+
         }
+
         &:hover {
             background: #e44b2c;
             transform: scale(1.1);
         }
     }
 }
+
 .timer {
     font-size: 100px;
     padding: 30px 0;
@@ -691,9 +736,11 @@ html, body {
     align-items: center;
     box-shadow: 0px 14px 34px rgba(21, 33, 56, 0.11);
 }
+
 .colon {
     margin-bottom: 45px;
 }
+
 .timer__item {
     width: 180px;
     display: flex;
@@ -703,6 +750,7 @@ html, body {
     margin: 0 10px;
     font-size: 20px;
     @extend %bitter600;
+
     span {
         font-size: 100px;
         @extend %bitter700;
@@ -746,10 +794,12 @@ html, body {
         @extend %seg400;
         margin-bottom: 50px;
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
+
     &__input {
         padding: 20px 60px 20px 30px;
         width: 390px;
@@ -801,10 +851,12 @@ html, body {
         @extend %bitter600;
         height: 60px;
         position: relative;
+
         &:hover {
             background: #e44b2c;
             transform: scale(1.1);
         }
+
         &::after {
             position: absolute;
             width: 14px;
@@ -819,99 +871,110 @@ html, body {
 
 .modal {
     @extend %bitter600;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1050;
-    display:none;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background-color:rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+
     &__dialog {
-        max-width:500px;margin:40px auto
+        max-width: 500px;
+        margin: 40px auto
     }
+
     &__content {
-        position:relative;
-        width:100%;
-        padding:40px;
-        background-color:#fff;
-        border:1px solid rgba(0,0,0,.2);
-        border-radius:4px;
-        max-height:80vh;
-        overflow-y:auto
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 4px;
+        max-height: 80vh;
+        overflow-y: auto
     }
+
     &__close {
-        position:absolute;
-        top:8px;
-        right:14px;
-        font-size:30px;
-        color:#000;
-        opacity:.5;
-        font-weight:700;
-        border:none;
-        background-color:transparent;
-        cursor:pointer
-    }
-    &__title {
-        text-align:center;
-        font-size:22px;
-        text-transform:uppercase
-    }
-    &__input {
-        display:block;
-        margin:20px auto 20px auto;
-        width:280px;
-        height:50px;
-        background:#fff;
-        box-shadow:0 4px 15px rgba(0,0,0,.2);
-        border:none;
-        font-size:18px;
-        text-align:center;
-        padding:0 20px;
-        outline:0
-    }
-    button {
-        display:block;
-        width:280px;
-        margin:0 auto;
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        font-size: 30px;
+        color: #000;
+        opacity: .5;
+        font-weight: 700;
         border: none;
-        background-color:#303030;
-        color:#fff;
-        border:none;
-        height:50px;
+        background-color: transparent;
+        cursor: pointer
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase
+    }
+
+    &__input {
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 280px;
+        height: 50px;
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+        border: none;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+        outline: 0
+    }
+
+    button {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        border: none;
+        background-color: #303030;
+        color: #fff;
+        border: none;
+        height: 50px;
     }
 }
 
 
 .modal-subscribe {
     @extend %bitter600;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1050;
-   display:none;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    background-color:rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+
     &__dialog {
-        max-width:500px;
-        margin:40px auto;
+        max-width: 500px;
+        margin: 40px auto;
     }
+
     &__content {
-        position:relative;
-        width:100%;
-        padding:40px;
-        background-color:#fff;
-        border:1px solid rgba(0,0,0,.2);
-        border-radius:4px;
-        max-height:80vh;
-        overflow-y:auto
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 4px;
+        max-height: 80vh;
+        overflow-y: auto
     }
+
     &__title {
         margin-bottom: 20px;
     }
+
     img {
         margin: 0 auto;
     }
@@ -928,7 +991,7 @@ html, body {
 
 
 .footer {
-    height: 91px;
+    height: auto;
     background: #2D3034;
 }
 

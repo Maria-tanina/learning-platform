@@ -6,7 +6,30 @@ $('.article__slider').slick({
     slidesToScroll: 1,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-9.53674e-07 5.99988L6 0V4.81907L6 7.18085L6 12L-9.53674e-07 5.99988Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(1 7.86805e-08 9.71364e-08 -1 5.55469 5)" stroke="#23262D" stroke-width="2"/></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 6.00012L34 12L34 7.18093L34 4.81915L34 9.53674e-07L40 6.00012Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(-1 -1.66103e-07 -1.84559e-07 1 34.4453 7)" stroke="#23262D" stroke-width="2"/></svg></button>'
+    nextArrow: '<button type="button" class="slick-next"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 6.00012L34 12L34 7.18093L34 4.81915L34 9.53674e-07L40 6.00012Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(-1 -1.66103e-07 -1.84559e-07 1 34.4453 7)" stroke="#23262D" stroke-width="2"/></svg></button>',
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+            breakpoint: 940,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 630,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+      ]
 });
 
 $('.courses__slider').slick({
@@ -14,7 +37,17 @@ $('.courses__slider').slick({
     slidesToScroll: 1,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-9.53674e-07 5.99988L6 0V4.81907L6 7.18085L6 12L-9.53674e-07 5.99988Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(1 7.86805e-08 9.71364e-08 -1 5.55469 5)" stroke="#23262D" stroke-width="2"/></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 6.00012L34 12L34 7.18093L34 4.81915L34 9.53674e-07L40 6.00012Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(-1 -1.66103e-07 -1.84559e-07 1 34.4453 7)" stroke="#23262D" stroke-width="2"/></svg></button>'
+    nextArrow: '<button type="button" class="slick-next"><svg width="40" height="12" viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 6.00012L34 12L34 7.18093L34 4.81915L34 9.53674e-07L40 6.00012Z" fill="#23262D"/><line y1="-1" x2="34.4444" y2="-1" transform="matrix(-1 -1.66103e-07 -1.84559e-07 1 34.4453 7)" stroke="#23262D" stroke-width="2"/></svg></button>',
+    responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+        
+      ]
 });
 
 const deadline = '2022-9-30';
@@ -121,9 +154,47 @@ subModal.addEventListener('click', (e) => {
 
 
 
+// adaptive menu 
 
+    $('.menu__btn').on('touchstart', function()  {
+        $('.menu').toggleClass('menu--active');
+        $('.header__wrapper').toggleClass('header__wrapper--active');
+        $('.header__inner').toggleClass('header__inner--active'); 
+        let src = ($('.menu__img').attr("src") === "images/home/menu.svg") ? "images/home/close.svg" : "images/home/menu.svg";
+      $('.menu__img').attr("src", src);
+         
+    });
+    
+    $('.menu__list-link').on('touchstart', function(e)  {
+            e.preventDefault();
+            $(this).closest('.menu__list-item').addClass('menu__list-item--touchstart');
+            
+    });
+    $('.menu__list-link').on('touchend', function(e)  {
+        e.preventDefault();
+        setTimeout(function() {
+            $('.menu__list-item').removeClass('menu__list-item--touchstart');
+            $('.menu').toggleClass('menu--active');
+        $('.header__wrapper').toggleClass('header__wrapper--active');
+        $('.header__inner').toggleClass('header__inner--active'); 
+        let src = ($('.menu__img').attr("src") === "images/home/menu.svg") ? "images/home/close.svg" : "images/home/menu.svg";
+      $('.menu__img').attr("src", src);
+        }, 100);
+});
 
-
+// Adaptive
+/*
+function myFunction(x) {
+    if (x.matches) { // Если медиа запрос совпадает
+      document.querySelector('.platform__text').innerText = "Курси для початківців і просунутих програмістів, а також цікаві статті.";
+    } else {
+        document.querySelector('.platform__text').innerText = "Курси для початківців і просунутих програмістів, а також цікавістатті. Приєднуйтесь і дозвольте нам підтримати вас у вашій кар’єрі";
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 700px)");
+  myFunction(x);
+console.dir(document.querySelector('.platform__title'));*/
 
 
 

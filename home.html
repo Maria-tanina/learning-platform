@@ -11,31 +11,48 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a href="" class="header__logo-link">
-                        <img src="images/logo.svg" alt="">
-                    </a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
-                            <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
-                            <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
-                            <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a></li>
-                            <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
-                        </ul>
+        <div class="header__wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="" class="header__logo-link">
+                            <img class="logo__big" src="images/logo.svg" alt="">
+                            <img class="logo__min" src="images/home/logo-min.svg" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a>
+                                </li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+                            </ul>
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Linkedin</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Telegram</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Gmail</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <button class="language__btn">
                             <div class="language__btn--left">UKR</div>
                             <div class="language__btn--right">ENG</div>
                         </button>
-                    </nav>
+                        <button class="menu__btn">
+                            <img class="menu__img" src="images/home/menu.svg" alt="">
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <div class="main">
-
             <section class="platform">
                 <div class="container">
                     <div class="platform__inner">
@@ -44,15 +61,17 @@
                             <div class="platform__text">Курси для початківців і просунутих програмістів, а також цікаві
                                 статті.
                                 Приєднуйтесь і дозвольте нам підтримати вас у вашій кар’єрі</div>
-                            <a data-modal href="#" class="platform__btn">Зв'язатися з нами</a>
+                            <a data-modal href="#" class="platform__btn platform__btn--big">Зв'язатися з нами</a>
                             <p class="mouse">Гортай вниз</p>
                         </div>
                         <div class="platform__content">
                             <img src="images/home/platform.svg" alt="platform" class="platform__img">
                         </div>
+                        <a data-modal href="#" class="platform__btn platform__btn--small">Зв'язатися з нами</a>
                     </div>
                 </div>
             </section>
+           
             <section class="article">
                 <div class="container">
                     <h3 class="title">Статті</h3>
@@ -310,19 +329,19 @@
                     <div class="timer">
                         <div class="timer__item">
                             <span id="days">12</span>
-                           <div class="dayName">днів</div>
+                            <div class="dayName">днів</div>
                         </div>
-                        <div class="colon">:</div> 
+                        <div class="colon">:</div>
                         <div class="timer__item">
                             <span id="hours">5</span>
                             <div class="hoursName">годин</div>
                         </div>
-                        <div class="colon">:</div> 
+                        <div class="colon">:</div>
                         <div class="timer__item">
                             <span id="minutes">7</span>
                             <div class="minutesName">хвилин</div>
                         </div>
-                        <div class="colon">:</div> 
+                        <div class="colon">:</div>
                         <div class="timer__item">
                             <span id="seconds">3</span>
                             <div class="secondsName">секунд</div>
@@ -355,6 +374,7 @@
                     </div>
                 </div>
             </form>
+        
         </div>
 
         <footer class="footer">
@@ -392,9 +412,9 @@
     <div class="modal-subscribe">
         <div class="modal-subscribe__dialog">
             <div class="modal-subscribe__content">
-                    <div data-closeSub class="modal__close">&times;</div>
-                    <div class="modal-subscribe__title modal__title">Дякуємо за підписку!</div>
-                    <img src="images/home/pic2.svg" alt="">
+                <div data-closeSub class="modal__close">&times;</div>
+                <div class="modal-subscribe__title modal__title">Дякуємо за підписку!</div>
+                <img src="images/home/pic2.svg" alt="">
             </div>
         </div>
     </div>
