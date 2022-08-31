@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curses Individ</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header__wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="" class="header__logo-link">
+                            <img class="logo__big" src="images/logo.svg" alt="">
+                            <img class="logo__min" src="images/home/logo-min.svg" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a>
+                                </li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+                            </ul>
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Linkedin</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Telegram</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Gmail</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="language__btn">
+                            <div class="language__btn--left">UKR</div>
+                            <div class="language__btn--right">ENG</div>
+                        </button>
+                        <button class="menu__btn">
+                            <img class="menu__img" src="images/home/menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="block-directory">
+            <img src="images/Curses/home 1.svg" alt="home">
+            <p class="directory"><span>Головна &#129130 Курси</span> &#129130 C# від нуля до героя</p>
+        </div>
+
+        <div class="global-conteiner">
+            <nav> <span>
+                    <p>Меню курсу</p><img src="images/Curses/Vector.png" alt="#">
+                </span>
+                <ol class="nav-tree">
+                    <li class="closed">Вступ до C#</li>
+                    <li class="closed">Основи C#</li>
+                    <li class="closed">Класи, структури та об'єкти
+                        <ol>
+                            <li><a href="#">Класи та об'єкти</a></li>
+                            <li><a href="#">Конструкції</a></li>
+                            <li><a href="#">Перевантаження методу</a></li>
+                            <li><a href="#">Поля Const і Readonly</a></li>
+                            <li><a href="#">Додавання класів та основного методу</a></li>
+                            <li><a href="#">Структура</a></li>
+                            <li><a href="#">Типи значень і довідкові типи</a></li>
+                            <li><a href="#">Клас проти структури</a></li>
+                            <li><a href="courses_individual.html">Область застосування (контекст) змінної</a></li>
+                            <li><a href="#">Простіри імен</a></li>
+                            <li><a href="#">Глобальні простори імен</a></li>
+                            <li><a href="#">Додавання збірки до проекту</a></li>
+                            <li><a href="#">Модифікатори доступу</a></li>
+                            <li><a href="#">Властивості</a></li>
+                            <li><a href="#">Індекси</a></li>
+                            <li><a href="#">Статичне ключове слово</a></li>
+                        </ol>
+                    </li>
+                    <li class="closed">Спадковість і поліморфізм</li>
+                    <li class="closed">Обробка винятків</li>
+                    <li class="closed">Інтерфейси</li>
+                    <li class="closed">Делегати, події та лямбда</li>
+                    <li class="closed">Рядки, масив і DateTime</li>
+                    <li class="closed">Додаткові можливості ООП</li>
+                    <li class="closed">Колекції, перераховувачі та ітератори</li>
+                    <li class="closed">Збір сміття, управління пам'яттю</li>
+                    <li class="closed">Відображення</li>
+                    <li class="closed">Багатопотоковість</li>
+                    <li class="closed">Бібліотека паралельного програмування та TPL</li>
+                    <li class="closed">Асинхронне програмування</li>
+                    <li class="closed">Робота з потоками та файловою системою</li>
+                </ol>
+            </nav>
+            <main class="courses_individual">
+                <p class="chapter-name">Класи, структури та об'єкти</p>
+                <h1>Область застосування (контекст) змінної</h1>
+                <div class="img_banner"><img src="images/Curses/banner.png" alt="code"></div>
+                <p>
+                    Кожна змінна доступна у межах певного контексту чи області видимість.
+                    Поза цим контекстом змінної вже немає.
+                </p>
+                <h3>Існують різні контексти:</h3>
+                <ul class="list_1">
+                    <li><span>
+                            Контекст класу. Змінні, визначені лише на рівні класу, доступні у будь-якому методі цього
+                            класу.
+                            Їх ще називають глобальними змінними чи полями
+                        </span></li>
+                    <li><span>
+                            Контекст методу. Змінні, визначені лише на рівні методу, є локальними і доступні лише рамках
+                            даного методу.
+                            В інших методах вони недоступні
+                        </span></li>
+                    <li><span>
+                            Контекст блок коду. Змінні, визначені на рівні блоку коду, також локальні і доступні тільки
+                            в рамках даного блоку.
+                            Поза власним блоком коду вони не доступні.
+                        </span></li>
+                </ul>
+                <p class="label">
+                    Наприклад, нехай клас Program визначен таким шляхом:
+                </p>
+
+                <div class="code-example first">
+                    <div class="line-namber">
+                        <pre>
+  1 
+  2 
+  3 
+  4 
+  5 
+  6 
+  7 
+  8 
+  9 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17 
+ 18 
+ 19 
+ 20 
+ 21 
+ 22 
+ 23 
+ 24 
+ 25 
+ 26 
+ 27 
+ 28 
+ 29 
+ 30 
+ 31 
+ 32 
+ 33 
+ 34         </pre>
+                    </div>
+                    <div class="code-field">
+                        <pre>
+    Person tom = new();
+    tom.PrintName();
+    tom.PrintSurname();
+    
+    class Person                            <span>// начало контекста класса</span>
+    {
+        string type = "Person";             <span>// переменная уровня класса</span>
+        public void PrintName()             <span>// начало контекста метода PrintName</span>
+        {
+            string name = "Tom";            <span>// переменная уровня метода</span>
+
+           {                               <span>// начало контекста блока кода</span>
+                string shortName = "Tomas"; <span>// переменная уровня блока кода</span>
+                Console.WriteLine(type);    <span>// в блоке доступна переменная класса</span>
+                Console.WriteLine(name);    <span>// в блоке доступна переменная окружающего метода</span>
+                Console.WriteLine(shortName);<span>// в блоке доступна переменная этого же блока</span>
+            }                               <span>// конец контекста блока кода, переменная shortName уничтожается</span>
+    
+            Console.WriteLine(type);        <span>// в методе доступна переменная класса</span>
+            Console.WriteLine(name);        <span>// в методе доступна переменная этого же метода</span>
+            //Console.WriteLine(shortName); <span>//так нельзя, переменная c определена в блоке кода</span>
+            //Console.WriteLine(surname);     <span>//так нельзя, переменная surname определена в другом методе</span>
+    
+        }       <span>// конец контекста метода PrintName, переменная name уничтожается</span>
+    
+        public void PrintSurname()      <span>// начало контекста метода PrintSurname</span>
+        {
+            string surname = "Smith";   <span>// переменная уровня метода</span>
+    
+            Console.WriteLine(type);        <span>// в методе доступна переменная класса</span>
+            Console.WriteLine(surname);     <span>// в методе доступна переменная этого же метода</span> 
+        }       <span>// конец конекста метода PrintSurname, переменная surname уничтожается</span>
+    
+    }   <span>// конец контекста класса, переменная type уничтожается</span>
+                    </pre>
+                    </div>
+                </div>
+                <p>
+                    Тут визначено чотири змінних: <code>type, name, shortName</code> і <code>surname</code>. Кожна з них
+                    існує у своєму контексті.
+                    Змінна <code>type</code> існує в контексті всього класу <code>Person</code> і доступна в будь-якому
+                    місці та блоці коду у методах <code>PrintName</code> та <code>PrintSurname</code>.
+                </p>
+                <p>
+                    Змінна <code>name</code> існує тільки в рамках методу <code>PrintName</code>. Так само як і змінна
+                    <code>surname</code> існує у межах методу <code>PrintSurname</code>.
+                    У методі PrintName ми можемо звернутися до змінної surname, оскільки він у іншому контексті.
+                </p>
+                <p>
+                    Змінна <code>shortName</code> існує тільки в блоці коду, межами якого є відкриваюча та закриваюча
+                    фігурні дужки.
+                    Поза його межами змінна <code>shortName</code> не існує і до неї не можна звернутися.
+                </p>
+                <p>
+                    Нерідко межі різних контекстів можна асоціювати з фігурними дужками, що відкриваються і
+                    закриваються,
+                    як у даному випадку, які задають межі блоку коду, методу, класу.
+                </p>
+                <p class="label">
+                    Працюючи зі змінними треба враховувати, що локальні змінні, визначені у методі чи блоці коду,
+                    приховують змінні рівня класу, якщо їх імена збігаються:
+                </p>
+
+                <div class="code-example second">
+                    <div class="line-namber">
+                        <pre>
+  1 
+  2 
+  3 
+  4 
+  5 
+  6 
+  7 
+  8 
+  9 
+ 10 
+                    </pre>
+                    </div>
+                    <div class="code-field">
+                        <pre>
+    class Person 
+    {
+        string name = "Tom";            <span>// переменная уровня класса</span>
+        public void PrintName() 
+        {
+            string name = "Tomas";      <span>// переменная уровня метода скрывает переменную уровня класса</span>
+        
+            Console.WriteLine(name);    <span>// Tomas</span>
+        } 
+    }
+                    </pre>
+                    </div>
+                </div>
+                <p>
+                    При оголошенні змінних також треба враховувати, що в одному контексті
+                    не можна визначити кілька змінних з тим самим ім'ям.
+                </p>
+                <div class="img-conteiner">
+                    <div><img src="images/Curses/image 5.png" alt="code"></div>
+                    <div><img src="images/Curses/image 4.png" alt="code"></div>
+                </div>
+                <div class="navigation">
+                    <a class="to_back" href="#"><span>&#129044</span>Попередня стаття</a>
+                    <a class="to_front" href="#">Наступна стаття<span>&#129046</span></a>
+                </div>
+
+                <div class="practic">
+                    <div class="practic-header">
+                        <h2>Практичні завдання</h2>
+                        <div><img src="images/Curses/Vector.png" alt="#"></div>
+                    </div>
+                    <h3>Питання 1</h3>
+                    <p>Що виведе наступний код:</p>
+                    <div class="task">
+                        <pre>
+    <span>string</span> name = <span class="red">"Tom"</span>;
+    Console.WriteLine(Name); </pre>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-header">
+                            <h5>Відповідь</h5>
+                            <div><img src="images/Curses/Vector.png" alt="#"></div>
+                        </div>
+                        <p>
+                            Ця програма не скомпілюється. Метод Console.WriteLine() намагається вивести на консоль
+                            значення змінної Name, однак у програмі немає такої змінної.
+                            У програмі є лише змінна name.
+                            Але оскільки C# реєстрозалежна мова, то name не еквівалентно Name
+                        </p>
+                    </div>
+
+                    <h3>Питання 2</h3>
+                    <p>Що виведе наступний код:</p>
+                    <div class="task">
+                        <pre>
+    <span class="red">using</span> Microsoft.AspNetCore.Builder;
+    <span class="red">using</span> Microsoft.AspNetCore.Hosting;
+    <span class="red">using</span> Microsoft.Extensions.Configuration;
+    <span class="red">using</span> Microsoft.Extensions.DependencyInjection;
+    <span class="red">using</span> Microsoft.Extensions.Hosting;
+
+    <span class="red">namespace</span> CacheExamples
+    {
+        <span class="red">public class</span> Startup
+        {
+            <span class="red">public</span> Startup(IConfiguration configuration)
+            {
+                Configuration = configuration;
+            }
+
+            <span class="red">public</span> IConfiguration Configuration { get; }
+
+            <span class="red">public void</span> ConfigureServices(IServiceCollection services)
+            {
+                services.AddMemoryCache(); // Add memory cache dependencies 
+                services.AddControllers();
+            }
+
+            <span class="red">public void</span> Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            {
+                ...
+            }
+        }
+    }
+                    </pre>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-header">
+                            <h5>Відповідь</h5>
+                            <div><img src="images/Curses/Vector.png" alt="#"></div>
+                        </div>
+                        <ul>Варіанти відповідей:
+                            <li><span>Tom</span></li>
+                            <li><span>Sam</span></li>
+                            <li><span>person</span></li>
+                            <li><span>Програма завершить роботу з помилкою</span></li>
+                        </ul>
+                    </div>
+
+                    <button>Згорнути</button>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__text">Made with &#10084; by Stanislav Zghurskyi ©2022 </p>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Linkedin</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Telegram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Gmail</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

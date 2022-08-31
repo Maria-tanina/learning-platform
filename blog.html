@@ -1,82 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="" class="header__logo-link">
-                    <img src="images/logo.svg" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+    <div class="wrapper">
+        <div class="header__wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="" class="header__logo-link">
+                            <img class="logo__big" src="images/logo.svg" alt="">
+                            <img class="logo__min" src="images/home/logo-min.svg" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a>
+                                </li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+                            </ul>
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Linkedin</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Telegram</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Gmail</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="language__btn">
+                            <div class="language__btn--left">UKR</div>
+                            <div class="language__btn--right">ENG</div>
+                        </button>
+                        <button class="menu__btn">
+                            <img class="menu__img" src="images/home/menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="blog-page">
+            <div class="container1">
+
+                <h1 class="blog-h1">
+                    <nav class="h1-menu">
+                        <ul class="h1-menu-list">
+                            <img src="images/blog/home1.svg">
+                            <li class="h1-menu-list-item"><a href="home.html" class="h1-menu-list-link">Головна</a></li>
+                            <img src="images/blog/next1.svg">
+                            <li class="h1-menu-list-item"><a href="blog.html" class="h1-menu-list-link">Блог</a></li>
+                        </ul>
+
+                    </nav>
+                </h1>
+
+                <h2 class="blog-h2">
+
+                    <div class="container2">
+                        Блог
+                    </div>
+
+                    <div class="container3">
+                        <!--         <p>BLOG</p> -->
+                        <img src="images/blog/blog.svg">
+                    </div>
+
+                    <!--            <div class="block-vector2">
+                    <img src="images/blog/blog-vector2.svg" id="box-img10"> 
+                </div>
+
+                <div class="block-vector3">
+                    <img src="images/blog/blog-vector3.svg" id="box-img11">   
+                </div> -->
+
+
+                </h2>
+
+                <div class="controls">
+
+                    <button type="button" data-filter=".cat-1" id="b-cat-1">Frontend</button>
+                    <button type="button" data-filter=".cat-2" id="b-cat-2">Backend</button>
+                    <button type="button" data-filter=".cat-3" id="b-cat-3">JavaScript</button>
+                    <button type="button" data-filter=".cat-4" id="b-cat-4">C#</button>
+                    <button type="button" data-filter=".cat-5" id="b-cat-5">Self-education</button>
+                    <button type="button" data-filter=".cat-6" id="b-cat-6">Cloud</button>
+                    <button type="button" data-filter=".cat-7" id="b-cat-7">Tips</button>
+                    <button type="button" data-filter=".cat-8" id="b-cat-8">Soft skills</button>
+                    <button type="button" data-filter=".cat-9" id="b-cat-9">Sql</button>
+                    <button type="button" data-filter=".cat-10" id="b-cat-10">React</button>
+                    <button type="button" data-filter="all" id="b-cat-all">All</button>
+
+                </div>
+
+
+                <div class="mix-container1">
+
+                    <div class="mix cat-1 cat-7 cat-4" data-order="1" id="mix1">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-1.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-1">Frontend</li>
+                                <li class="li-cat-7">Tips</li>
+                                <li class="li-cat-4">C#</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                            <!-- <div class="box-counter"></div> -->
+
+                        </div>
+                    </div>
+
+
+                    <div class="mix cat-1 cat-7" data-order="2" id="mix2">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-2.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-1">Frontend</li>
+                                <li class="li-cat-7">Tips</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+                        </div>
+                    </div>
+
+                    <div class="mix cat-3 cat-4" data-order="3" id="mix3">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-3.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-3">JavaScript</li>
+                                <li class="li-cat-4">C#</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mix cat-2 cat-3" data-order="4" id="mix4">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-4.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-2">Backend</li>
+                                <li class="li-cat-3">JavaScript</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mix cat-5" data-order="5" id="mix5">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-5.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-5">Self-education</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mix cat-6" data-order="6" id="mix6">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-6.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-6">Cloud</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mix cat-7" data-order="7" id="mix7">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-7.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-7">Tips</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mix cat-8" data-order="8" id="mix8">
+                        <div class="mix-box">
+                            <img src="images/blog/rectangle64-8.svg" id="box-img1">
+                            <ul class="box-group">
+                                <li class="li-cat-8">Soft skills</li>
+                            </ul>
+                            <p class="box-title">
+                                Наскільки ефективне навчання з дрібницями на утримання та результати
+                            </p>
+                            <p class="box-text">
+                                Питання максимізації уваги учнів і збільшення
+                                залученості переслідують вчителів на всіх рівнях шкільної ...
+                            </p>
+                            <img src="images/blog/line2.svg" id="box-img2">
+                            <img src="images/blog/calendar1.svg" id="box-img3">
+                            <img src="images/blog/eye1.svg" id="box-img4">
+                            <div id="box-p1"> 5.05.2022</div>
+                            <div id="box-p2"> 48 </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gap"></div>
+                    <!--                 <div class="gap"></div>
+                <div class="gap"></div>
+                <div class="gap"></div>   -->
+
+                </div>
+
+                <!--             <img src="images/blog/blog-vector2.svg" id="box-img10"> 
+            <img src="images/blog/blog-vector3.svg" id="box-img11">  -->
+
+                <div class="page-counter">
+                    <div class="container4">
+                        <button id="but-left">
+                            <img src="images/blog/left-arrow.svg" id="box-img5">
+                            <img src="images/blog/Line13.svg" id="box-img6">
+                        </button>
+                        <button id="count-but1">1</button>
+                        <button id="count-but2">2</button>
+                        <button id="count-but3">3</button>
+                        <button id="count-but_">...</button>
+                        <button id="count-but18">18</button>
+                        <button id="count-but19">19</button>
+                        <button id="but-right">
+                            <img src="images/blog/Line14.svg" id="box-img7">
+                            <img src="images/blog/right-arrow.svg" id="box-img8">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__text">Made with &#10084; by Stanislav Zghurskyi ©2022 </p>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Linkedin</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Telegram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Gmail</a>
+                        </li>
                     </ul>
-                    <button class="language__btn"></button>
-                </nav>
+                </div>
             </div>
-        </div>
-    </header>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <p class="footer__text">Made with &#10084; by Stanislav Zghurskyi ©2022 </p>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Linkedin</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Telegram</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Gmail</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="js/blog.js"></script>
+        </footer>
+    </div>
+    <script src='js/main.min.js'></script>
 </body>
+
 </html>

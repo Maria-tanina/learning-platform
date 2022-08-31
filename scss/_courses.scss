@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.courses > img {
+    position: absolute;
+    z-index: -1;
+}
+.courses > img:first-child {
+    top: -18px;
+    left: -20px;
+}
+.courses > img:nth-child(3) {
+    top: 455px;
+    left: 57%;
+}
+.courses > span {
+    position: absolute;
+    margin-top: 215px;
+    left: -6%;
+    transform: rotate(-90deg);
+    font-family: 'Bitter';
+    font-weight: 900;
+    font-size: 130px;
+    line-height: 156px;
+    text-transform: uppercase;
+    opacity: 0.06;
+    color: transparent;
+    -webkit-text-stroke: 2px #212836;
+    z-index: -1;
+}
+.cours-container {
+    max-width: 1230px;
+    margin: 22px auto 130px;
+}
+.directory {
+    margin-left: 10px;
+    font-family: 'Segoe UI Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: #212836;
+}
+.directory > span {
+    opacity: 0.6;
+}
+.directory,
+.cours-container > img {
+    display: inline-block;
+}
+
+.cours-container h1 {
+    margin: 36px 0 70px;
+    font-family: 'Bitter';
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.courses-flex {
+    margin-bottom: 30px;
+    height: 266px; /* 266.562 */
+    display: flex;
+    justify-content: space-between;
+}
+.sub-conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.courses-flex .language {
+    height: 266px;
+    width: 285px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.language h2 {
+    margin: 30px 0 20px;
+    font-family: 'Segoe UI Bold';
+    font-size: 25px;
+    line-height: 24px;
+}
+.language p {
+    height: 65px;
+    font-family: 'Segoe UI Regular';
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.language a {
+    display: inline-block;
+    width: 100%;
+    margin-top: 22px;
+    text-align: end;
+    text-decoration: underline;
+    font-family: 'Bitter';
+    font-weight: 600;
+    font-size: 16px;
+    color: #23262D;
+}
+.C_plus {
+    background: #FFB6B6;
+}
+.blue {
+    background: #C2E0FF;
+}
+.JS {
+    background: #FFF7B9;
+}
+.C_sharp {
+    background: #CCC1F6;
+}
+
+.language:hover,
+.language:hover p {
+    height: max-content;
+    z-index: 99;
+}
+.language:hover {
+    border: 2px solid #FFF;
+    box-shadow: 0px 23px 23px rgba(17, 34, 54, 0.09);
+}
+.language:hover .point {
+    display: none;
+}
+
+/* Respocible */
+
+@media screen and (max-width: 1230px) {
+
+    .cours-container {
+        max-width: 1214px;
+        padding: 0 5px;
+    }
+    .cours-container > img {
+        margin-left: 10px;
+    }
+    .sub-conteiner {
+        width: 590px;
+    }
+    .courses-flex .language {
+        flex-shrink: 0;
+    }
+    h1 {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1148px) {
+
+    .courses-flex {
+        flex-wrap: wrap;
+        height: 550px;
+        width: 650px;
+        padding: 0 10px;
+        margin: 0 auto 30px;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .sub-conteiner {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    main > img:nth-child(3) {
+        top: 1000px;
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .menu__list-item {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main > img:first-child {
+        top: 0;
+        left: -315px;
+    }
+    main > img:nth-child(3) {
+        display: none;
+    }
+    main > span {
+        display: none;
+    }
+
+    .cours-container {
+        max-width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 704px) {
+
+    .courses-flex {
+        width: 580px;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+
+    .cours-container {
+        margin-bottom: 60px;
+    }
+    .courses-flex {
+        height: max-content;
+        width: 320px;
+        margin-bottom: 0;
+    }
+    .sub-conteiner {
+        height: 700px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .courses-flex .language {
+        height: 335px;
+        padding-bottom: 10px;
+    }
+    .language p {
+        height: max-content;
+    }
+    .language .point {
+        display: none;
+    }
+    .language a {
+        margin-top: 12px;
+    }
+
+}

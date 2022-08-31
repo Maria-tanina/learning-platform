@@ -144,7 +144,7 @@ body {
         @extend %bitter700;
         color: #23262D;
         padding: 20px 0;
-
+        display: block;
         span {
             color: #E36F59;
         }
@@ -754,6 +754,7 @@ body {
     span {
         font-size: 100px;
         @extend %bitter700;
+        line-height: 124px;
     }
 
 }

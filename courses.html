@@ -1,71 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="" class="header__logo-link">
-                    <img src="images/logo.svg" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a></li>
-                        <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+    <div class="wrapper">
+        <div class="header__wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a href="" class="header__logo-link">
+                            <img class="logo__big" src="images/logo.svg" alt="">
+                            <img class="logo__min" src="images/home/logo-min.svg" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Блог</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Курси</a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Про мене </a></li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підписка на сайт </a>
+                                </li>
+                                <li class="menu__list-item"><a href="" class="menu__list-link">Підтримка</a></li>
+                            </ul>
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Linkedin</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Telegram</a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a href="#" class="social__list-link">Gmail</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="language__btn">
+                            <div class="language__btn--left">UKR</div>
+                            <div class="language__btn--right">ENG</div>
+                        </button>
+                        <button class="menu__btn">
+                            <img class="menu__img" src="images/home/menu.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <main class="courses">
+            <img src="images/Curses/Cloudy1.png" alt="cloud">
+            <span>courses</span>
+            <img src="images/Curses/Cloudy2.png" alt="cloud">
+            <div class="cours-container">
+                <img src="images/Curses/home 1.svg" alt="home">
+                <p class="directory"><span>Головна</span> &#129130 Курси</p>
+                <h1>Курси</h1>
+                <div class="courses-flex">
+                    <div class="sub-conteiner">
+                        <article class="language C_plus">
+                            <img src="images/Curses/ISO_C++_Logo 1.png" alt="c++">
+                            <h2>C++ від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+
+                        <article class="language blue">
+                            <img src="images/Curses/ISO_C++_Logo 1Blue.png" alt="c++">
+                            <h2>C++ від нуля до героя</h2>
+                            <p>
+                                Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                Проходьте курси, вирішуйте <span class="point">...</span> завдання,
+                                переглядайте новини та ставайте справжніми майстрами програмування!
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+                    </div>
+                    <div class="sub-conteiner">
+                        <article class="language JS">
+                            <img src="images/Curses/JavaScript_logo_2 1.png" alt="JS">
+                            <h2>JS від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+
+                        <article class="language C_sharp">
+                            <img src="images/Curses/ISO_Csharp_Logo1.png" alt="C#">
+                            <h2>C# від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="courses_individual.html">Детальніше</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="courses-flex">
+                    <div class="sub-conteiner">
+                        <article class="language C_sharp">
+                            <img src="images/Curses/ISO_Csharp_Logo1.png" alt="C#">
+                            <h2>C# від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="courses_individual.html">Детальніше</a>
+                        </article>
+
+                        <article class="language JS">
+                            <img src="images/Curses/JavaScript_logo_2 1.png" alt="JS">
+                            <h2>JS від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+                    </div>
+                    <div class="sub-conteiner">
+                        <article class="language C_plus">
+                            <img src="images/Curses/ISO_C++_Logo 1.png" alt="c++">
+                            <h2>C++ від нуля до героя</h2>
+                            <p>
+                                Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                Проходьте курси, вирішуйте <span class="point">...</span> завдання,
+                                переглядайте новини та ставайте справжніми майстрами програмування!
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+
+                        <article class="language blue">
+                            <img src="images/Curses/ISO_Csharp_Logo1Blue.png" alt="C#">
+                            <h2>C# від нуля до героя</h2>
+                            <p>
+                                Питання максимізації уваги учнів і збільшення залученості
+                                переслідують вчителів на всіх рівнях шкільної<span class="point">...</span> програми<br>
+                                Проходьте курси, вирішуйте завдання
+                            </p>
+                            <a href="#">Детальніше</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__text">Made with &#10084; by Stanislav Zghurskyi ©2022 </p>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Linkedin</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Telegram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Gmail</a>
+                        </li>
                     </ul>
-                    <button class="language__btn"></button>
-                </nav>
+                </div>
             </div>
-        </div>
-    </header>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <p class="footer__text">Made with &#10084; by Stanislav Zghurskyi ©2022 </p>
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Linkedin</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Telegram</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">Gmail</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="js/courses.js"></script>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
