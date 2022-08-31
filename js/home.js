@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 
 
 $('.article__slider').slick({
@@ -32,7 +32,7 @@ $('.article__slider').slick({
       ]
 });
 
-$('.courses__slider').slick({
+$('.courses1__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
@@ -155,7 +155,6 @@ subModal.addEventListener('click', (e) => {
 
 
 // adaptive menu 
-
     $('.menu__btn').on('touchstart', function()  {
         $('.menu').toggleClass('menu--active');
         $('.header__wrapper').toggleClass('header__wrapper--active');
@@ -198,22 +197,3 @@ console.dir(document.querySelector('.platform__title'));*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});

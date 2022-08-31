@@ -9,12 +9,9 @@ const concat = require('gulp-concat');
 
 function scripts() {
     return src([
-        'js/home.js',
-        'node_modules/mixitup/dist/mixitup.js',
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
-        'js/blog.js',
-        'js/courses.js',
+        'js/home.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())

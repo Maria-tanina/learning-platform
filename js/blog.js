@@ -1,3 +1,29 @@
+$('.menu__btn').on('touchstart', function()  {
+  $('.menu').toggleClass('menu--active');
+  $('.header__wrapper').toggleClass('header__wrapper--active');
+  $('.header__inner').toggleClass('header__inner--active'); 
+  let src = ($('.menu__img').attr("src") === "images/home/menu.svg") ? "images/home/close.svg" : "images/home/menu.svg";
+$('.menu__img').attr("src", src);
+   
+});
+
+$('.menu__list-link').on('touchstart', function(e)  {
+      e.preventDefault();
+      $(this).closest('.menu__list-item').addClass('menu__list-item--touchstart');
+      
+});
+$('.menu__list-link').on('touchend', function(e)  {
+  e.preventDefault();
+  setTimeout(function() {
+      $('.menu__list-item').removeClass('menu__list-item--touchstart');
+      $('.menu').toggleClass('menu--active');
+  $('.header__wrapper').toggleClass('header__wrapper--active');
+  $('.header__inner').toggleClass('header__inner--active'); 
+  let src = ($('.menu__img').attr("src") === "images/home/menu.svg") ? "images/home/close.svg" : "images/home/menu.svg";
+$('.menu__img').attr("src", src);
+  }, 100);
+});
+
 var containerEl = document.querySelector (".mix-container1");//('.container');
 
 var mixer = mixitup(    containerEl, { 
